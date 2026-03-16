@@ -6,25 +6,25 @@ Upload an exercise video and get async form analysis with rep metrics, annotated
 
 ## Architecture Overview
 
-​```text
-Browser
-  │
-  ▼
-Frontend (React + Vite + Nginx)
-  │
-  ▼
-Backend API (FastAPI)
-  │
-  ▼
-Redis Queue (RQ)
-  │
-  ▼
-Worker
-  ├──────────────┐
-  │              │
-  ▼              ▼
-Postgres    Filesystem (artifacts/)
-​```
+```text
+   Browser
+      |
+      v
+   Frontend (React + Vite + Nginx)
+      |
+      v
+   Backend API (FastAPI)
+      |
+      v
+   Redis Queue (RQ)
+      |
+      v
+   Worker
+      | \
+      |  \
+      v   v
+Postgres   Filesystem (artifacts/)
+```
 
 ## Features
 
