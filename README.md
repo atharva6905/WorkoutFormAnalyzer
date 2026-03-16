@@ -166,13 +166,17 @@ pytest -m "not slow"
 ## Sample Screenshots
 
 - Upload page
+
 ![Upload Page](.github/images/upload_page.png)
 
 - Processing state
+
 ![Upload Page](.github/images/processing_state.png)
 
 - Completed result page
+
 ![Upload Page](.github/images/result_page.png)
 
 - Annotated video frame
+
 ![Upload Page](.github/images/annotated_video_frame.png)
