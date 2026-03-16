@@ -165,9 +165,14 @@ pytest -m "not slow"
 
 ## Sample Screenshots
 
-Add screenshots here after the first successful end-to-end run:
-
 - Upload page
+![Upload Page](.github/images/upload_page.png)
+
 - Processing state
+![Upload Page](.github/images/processing_state.png)
+
 - Completed result page
+![Upload Page](.github/images/result_page.png)
+
 - Annotated video frame
+![Upload Page](.github/images/annotated_video_frame.png)
