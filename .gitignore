@@ -1,0 +1,43 @@
+# Environment
+.env
+backend/.env
+
+# Virtual environment
+.venv/
+
+# Artifacts and generated files
+artifacts/
+backend/artifacts/
+backend/outputs/
+backend/uploads/
+
+# Database files
+test.db
+backend/test.db
+
+# Python
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+backend/.pytest_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env.local
+
+# Old directories
+workoutform-frontend/
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Docker
+docker-compose.env
