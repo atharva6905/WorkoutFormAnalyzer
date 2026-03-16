@@ -6,25 +6,25 @@ Upload an exercise video and get async form analysis with rep metrics, annotated
 
 ## Architecture Overview
 
-```text
+​```text
 Browser
-   |
-   v
+  │
+  ▼
 Frontend (React + Vite + Nginx)
-   |
-   v
+  │
+  ▼
 Backend API (FastAPI)
-   |
-   v
+  │
+  ▼
 Redis Queue (RQ)
-   |
-   v
+  │
+  ▼
 Worker
-  | \
-  |  \
-  v   v
-Postgres   Filesystem (artifacts/)
-```
+  ├──────────────┐
+  │              │
+  ▼              ▼
+Postgres    Filesystem (artifacts/)
+​```
 
 ## Features
 
@@ -162,11 +162,6 @@ pytest -m "not slow"
 - `angles.csv`: Frame-level report with `frame_index`, `timestamp_seconds`, `knee_angle`, `hip_angle`, `landmark_confidence`, and `valid_frame`
 - `plot.png`: Plot of knee and hip angles over frame index, including rep-window shading and threshold lines for squat depth and standing position
 
-## CI Badge
-
-GitHub Actions CI status:
-
-[![CI](https://github.com/atharva6905/WorkoutFormAnalyzer/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/atharva6905/WorkoutFormAnalyzer/actions/workflows/ci.yml)
 
 ## Sample Screenshots
 
